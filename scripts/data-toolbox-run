@@ -7,8 +7,8 @@ import argparse
 import pandas as pd
 
 # Import from data-toolbox
-import data-toolbox
-from data-toolbox.lib import clean_data
+import toolbox
+from toolbox.lib import clean_data
 
 if __name__ == '__main__':
     usage = '%(prog)s'
@@ -19,7 +19,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     folder_source, _ = split(data-toolbox.__file__)
     df = pd.read_csv('{}/data/data.csv.gz'.format(folder_source))
-    print('  data-toolbox/data/data.csv.gz Loaded')
+    print('  toolbox/data/data.csv.gz Loaded')
 
     res = clean_data(df)
     res.to_csv('out.csv', index=False)

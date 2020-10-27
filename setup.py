@@ -12,5 +12,5 @@ setup(name='data-toolbox',
       test_suite = 'tests',
       # include_package_data: to install data from MANIFEST.in
       include_package_data=True,
-      scripts=['scripts/data-toolbox-run'],
+      scripts=['scripts/data-toolbox-run', 'scripts/regex'],
       zip_safe=False)
